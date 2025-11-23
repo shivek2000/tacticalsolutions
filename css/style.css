@@ -1,5 +1,8 @@
 @import url("font-awesome.min.css");
 body {
+
+ overflow-x: hidden;
+
   font-family: "Poppins", sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
