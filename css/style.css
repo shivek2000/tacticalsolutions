@@ -5,6 +5,47 @@ body {
   background-color: #ffffff;
 }
 
+.services-section {
+  width: 100%;
+  padding: 20px;
+}
+
+.services-grid {
+  display: grid;
+  width: 100%;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  /* Desktop default */
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.services-grid li {
+  background: #f0f0f0;
+  padding: 14px;
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-weight: 500;
+}
+
+
 .layout_padding {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -469,8 +510,10 @@ a:focus {
 }
 
 .service_section {
-  background-color: #1c1c1c;
+  background-color: #e4c037;
+ background-image: url('../images/hero-bg.jpg');
 }
+
 
 .service_section .heading_container {
   color: #ffffff;
@@ -760,7 +803,7 @@ a:focus {
   padding: 25px 15px;
   text-align: center;
   bottom: 0;
-  background-color: rgba(28, 28, 28, 0.75);
+  
 }
 
 .team_section .btn-box {
